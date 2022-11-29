@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class uberride{
+           
+            constructor(startpoint,endpoint){
+                this.startpoint=startpoint.charCodeAt(0)-97;
+                this.endpoint=endpoint.charCodeAt(0)-97;
+            }
+            getfare(){
+                 rate=0;
+                var diff=this.endpoint-this.startpoint
+                console.log(diff)
+                 if(diff<=5){
+                    rate=diff*10
+                }
+                else if(diff>5 && diff<10){
+                    rate=50+(diff-5)*5;
+                }
+                else{
+                    rate=50+25+(diff-10)*2;
+                }
+                console.log(rate);
+                
+                return rate;
+            }
+            getdiscountedfare(rate){
+
+                console.log(rate-((rate*25)/100));
+            } 
+
+            }
+        
+       console.log("your startpoint and end point is between a and z choose one among it");
+        var ride1=new uberride("a","y");
+        console.log(ride1)
+        var rate=ride1.getfare();
+        ride1.getdiscountedfare(rate)
+
+    </script>
+</body>
+</html>
