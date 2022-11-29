@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(age,sex,employmentstaus){
+                this.age=age;
+                this.sex=sex;
+                this.employmentstaus=employmentstaus;
+            }
+            getagespecific(arrays){
+                var employed= arrays.map((element)=>{
+                    if(element.employmentstaus=="EMP")
+                    return element;
+                    else
+                    return 0
+                })
+                console.log(employed)
+            }
+        }
+       var santhosh=new Person(25,"M","UNEMP"); 
+       var dinesh=new Person(21,"M","EMP"); 
+       var swetha=new Person(22,"F","UNEMP");
+       var arrays=[] 
+       arrays.push(santhosh,dinesh,swetha);
+       console.log(arrays)
+       santhosh.getagespecific(arrays);
+
+    </script>
+    
+</body>
+</html>
