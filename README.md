@@ -16,3 +16,12 @@ d) Write a piece of code that creates an instance of the class Movie with the ti
 
 
 TASK PERSON CREATE A CLASS NAMES PERSON TO GET HIS BASIC DETAILS ALONG WITH EMPLOYEMENT STAUS AND PRINT ONLY THOSE WHO ARE EMPLOYED.
+
+
+Task UBERPRICE CALCULATOR
+you wil be given details about taxi startpoint and endpoint
+calculate fare for the customer based on th availbale date
+first 5 km 10 rs/per km
+ next five km 5 rs/per km
+ next each km= 2rs
+ also calculate the discounted fare to the person by applyin coupon of 25 percent to it.
